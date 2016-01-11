@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/patients')
+mongoose.connect(' mongodb://<Jacob>:<JacobGP12>@ds049160.mongolab.com:49160/patients')
 require('./models/Patients');
 
 var express = require('express');

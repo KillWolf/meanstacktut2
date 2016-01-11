@@ -1,0 +1,66 @@
+<div class="container-fluid">
+<div class="row" style="margin-top: 100px;">
+		<div class="col-md-4"></div>
+		<div class="col-md-4" style="text-align: center;"><h1>REDIGER/SLET</h1></div>
+		<div class="col-md-4"></div>
+	</div>
+	<div class="row"  style="">
+		<div class="col-md-3" >
+
+
+				<select style="margin: auto;" ng-model="selectedPatient" ng-options="patient.name for patient in patients" class="form-control" value="Vælg patient">
+					<option value="">-Vælg patient-</option>
+				</select>
+
+	
+		</div>
+		<div class="col-md-3" style="height:100%;">
+			<div class="jumbotron">
+				<div  style="margin: auto;">
+					<p>iPad ID</p>
+					<p class="field">{{selectedPatient.ipadid}}</p>
+					<p>Navn</p>
+					<p class="field">{{selectedPatient.name}}</p>
+					<p>Efternavn</p>
+					<p class="field">{{selectedPatient.surname}}</p>
+					<p>Age</p>
+					<p class="field">{{selectedPatient.age}}</p>
+					<p>KOL kategori</p>
+					<p class="field">{{selectedPatient.kolcategory}}</p>
+					<p>Video</p>
+					<p class="field">{{selectedPatient.video}}</p>
+				</div>
+				
+			</div>
+
+		
+
+				
+				{{createMsg}}
+		</div>
+				
+				
+		<div class="col-md-3 rscontrol2">
+			<div class="jumbotron">
+			<div class="bigtextcontainer">
+					<p>Patient Journal</p>
+					<p class="field">{{selectedPatient.patientjournal}}</p>
+					<p>Supplerende information</p>
+					<p class="field">{{selectedPatient.additionalinfo}}</p>
+				</div>
+			</div>
+			<div class="col-md-3"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-6 rsbuttons">	
+			<div class="pull-right redigerbtns">
+				<a href="/#/velkommen"><button class="btn" id="cancelbtncolor" >Gå tilbage</button></a>
+				<button class="btn btn-default" id="deletebtncolor" ng-click="deletePatient(selectedPatient._id)">Slet</button>		
+				<a href="#/rediger/{{selectedPatient._id}}"><button class="btn btn-default" id="redigerbtncolor2">Rediger</button></a>				
+			</div>
+		</div>
+		<div class="col-md-3"></div>
+		
+	</div>
+</div>

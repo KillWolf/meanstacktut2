@@ -1,0 +1,43 @@
+<div class="container-fluid">
+	<div class="row" style="margin-top: 100px;">
+		<div class="col-md-4"></div>
+		<div class="col-md-4" style="text-align: center;"><h1>REDIGER PATIENT</h1></div>
+		<div class="col-md-4"></div>
+	</div>
+		<div class="row" style="margin-bottom: 50px">
+		<div class="col-md-4"></div>
+		<div class="col-md-4" style="text-align: center;"><h3>{{patient.name}} {{patient.surname}}</h3></div>
+		<div class="col-md-4"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-6" style="margin-top: -0px">
+			<form novalidate class="form-group" ng-submit="updatePatient(patient)">
+				<div class="rformcontrol2 fonttype">iPad id</div> <input type="number" class="form-control rformcontrol2" ng-model="patient.ipadid" />
+				<div class="rformcontrol2 fonttype">Navn</div> <input type="text" class="form-control rformcontrol2" ng-model="patient.name" />
+				<div class="rformcontrol2 fonttype">Efter</div> <input type="text" class="form-control rformcontrol2" ng-model="patient.surname" />
+				<div class="rformcontrol2 fonttype">Alder</div> <input type="number" class="form-control rformcontrol2" ng-model="patient.age" />
+				<div class="rformcontrol2 fonttype">KOL Kategori</div> <input type="text" class="form-control rformcontrol2" ng-model="patient.kolcategory" />
+				<div class="rformcontrol2 fonttype">Video</div> <input type="text" class="form-control rformcontrol2" ng-model="patient.video" />
+			<div >
+				<div class="rformcontrol2 fonttype">Patient journal:</div> <textarea class="rformcontrol2 form-control" cols="75" rows="6" name="comment" ng-model="patient.patientjournal"></textarea>
+				<div class="rformcontrol2 fonttype">Supplerende information:</div> <textarea class="form-control rformcontrol2" cols="75" rows="6" name="comment" ng-model="patient.additionalinfo" Placeholder="Supplerende information"></textarea>
+				<input type="text" ng-model="patient._id" style="display:none;">
+			</div>
+			
+			<a href="/#/redigerOversigt"><button class="btn btn-default redigerknap" >Gå tilbage</button></a>
+			<input type="submit" id="submit" value="Bekræft" class="btn btn-default opretbtns" >
+			
+			</form>
+			{{updateMsg}}
+
+		</div>
+		<div class="col-md-3"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-6"></div>
+		<div class="col-md-3"></div>
+</div>
+
+

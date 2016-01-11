@@ -37,6 +37,14 @@ router.delete('/patients/:patient', function(req, res, next) {
 });
 
 router.put('/patients/:patient', function(req, res, next) {
+    req.patient.ipadid = req.body.ipadid;
+    req.patient.name = req.body.name;
+    req.patient.surname = req.body.surname;
+    req.patient.age = req.body.age;
+    req.patient.kolcategory = req.body.kolcategory;
+    req.patient.video = req.body.video;
+    req.patient.patientjournal = req.body.patientjournal;
+    req.patient.additionalinfo = req.body.additionalinfo;
     req.patient.save(function(err, patient) {
       if (err) { return next(err); }
       res.json(patient);

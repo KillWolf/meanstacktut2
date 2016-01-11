@@ -1,0 +1,74 @@
+<div class="container-fluid">
+	<div class="row" style="margin-top: 50px;">
+		<div class="col-md-4"></div>
+		<div class="col-md-4" style="text-align: center;"><h1>OPRET PATIENT</h1></div>
+		<div class="col-md-4"></div>
+	</div>
+	<div class="row" style="">
+		<div class="col-md-3"></div>				
+		<div class="col-md-6" style="">	
+			<form role="form"  ng-submit="addPatient()" >
+				<div style="margin-top: 50px;">
+				<input class="form-control cpformcontrol2" type="number" ng-model="ipadid" placeholder="iPad id" />
+				<input class="form-control cpformcontrol2" type="text" ng-model="title" placeholder="Fornavn" />
+				<input class="form-control cpformcontrol2" type="text" ng-model="surname" placeholder="Efternavn" />
+				<input class="form-control cpformcontrol2" type="number" ng-model="age" placeholder="Alder" />
+				<input class="form-control cpformcontrol2" type="text" ng-model="kolcategory" placeholder="KOL kategori" />
+				<input class="form-control cpformcontrol2" type="text" ng-model="video" placeholder="Upload speciel video" />
+				</div>
+				<div class="" style="margin: 0 !important">
+					<textarea class="form-control control1" cols="75" rows="6" name="comment" ng-model="patientjournal" placeholder="Patient journal" ></textarea>
+					<textarea class="form-control control2" cols="75" rows="6" name="comment" ng-model="extrainfo" Placeholder="Additional information" ></textarea>
+					<div class="cpopretbtns"
+						<a href="/#/velkommen"><button class="btn " id="cancelbtncolor"  style="margin:auto">Fortryd</button></a>
+						<button type="submit" ng-click="AcceptInput()"  style="margin:auto" class="btn btn-default opretbtns" id="opretbtncolor2">Bekræft</button>
+					</div>
+				</div>
+			</form>
+			
+		</div>
+		<div class="col-md-3"></div>
+	</div>
+</div>
+<!-- <div style="width: 200px; margin-top: 100px; margin-left: 200px">
+			<select ng-model="selectedPatient" ng-options="patient.name for patient in patients" class=" form-control"></select>
+		
+			</div>
+				<div class="viewbox " style="margin-left: 200px;">
+				<p>Patient: {{selectedPatient.ipadid}}</p>
+				<p>Patient: {{selectedPatient.name}}<p>
+				<p>Patient: {{selectedPatient.surname}}<p>
+				<p>Id: {{selectedPatient.age}}</p>
+				<p>Age: {{selectedPatient.kolcategory}} </p>
+				<p>Age: {{selectedPatient.video}} </p>
+				<p>Age: {{selectedPatient.patientjournal}} </p>
+				<p>Age: {{selectedPatient.additionalinfo}} </p>
+				
+				<button><a href="#/details/{{selectedPatient._id}}">Rediger</a></button>
+			   <button ng-click="deletePatient(selectedPatient._id)">Delete</button>
+			 </div>
+	</div>	
+	</div>	
+      
+</div>		 -->				
+
+
+
+
+<!--<select  ng-model="selectedItem" ng-options="patients.name for patients in patients" class="pull-left form-control" name="Vælg"></select>
+			</div>
+			<div class="viewbox pull-right">
+				<h3>Patient: {{selectedItem.name}}</h3>
+				<p>Id: {{selectedItem._id}}<p>
+				<p>Age: {{selectedItem.age}} </p>
+				<p>index: {{patients.indexOf(selectedItem)}}</p>
+				<button><a href="#/details/{{selectedItem._id}}">Rediger</a></button>
+			   <button ng-click="deleteItem()">Delete</button>
+			</div>-->
+			
+
+
+
+
+			
+	

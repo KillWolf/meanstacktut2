@@ -1,6 +1,382 @@
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+
+button {
+
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+
+body {
+
+	background-color: #EEEEEE;
+}
+img {
+
+
+	margin-top: 25px;
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	color: #9E9E9E;
+}
+
+input[type=submit] {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	position: absolute; 
+	bottom: -50px; 
+	right: 300px; 
+	background-color: #4caf50;
+	border: 0; color: white;
+}
+
+.redigerknap {
+	position: absolute; 
+	bottom: -50px; 
+	right: 400px; 
+}
+
+
 .viewbox {
 	height: 200px;
 	width: 200px;
 	background-color: gray;
 	
 }
+
+.header {
+	height: 100px;
+	width: 100%;
+	background-color: #F44336 ;
+}
+
+.headertext {
+	text-align: center;
+	color: #EEEEEE;
+	font-size: 56px;
+}
+
+.imagestyle {
+	
+	text-align: center;
+
+}
+
+#opretbtncolor {
+	background-color: #4caf50;
+	color: white;
+	border: 0;
+	margin-left: 100px;
+}
+
+#opretbtncolor2 {
+	background-color: #4caf50;
+	color: white;
+	border: 0;
+	
+}
+
+
+#redigerbtncolor {
+	background-color: #ff5722;
+	color: white;
+	border: 0;
+	margin-right: 100px;
+
+}
+
+
+
+#deletebtncolor {
+	background-color: #D32F2F;
+	color: white;
+	border: 0;
+	margin-top: 50px;
+	margin-left: 25px;
+	margin-right: 20px;
+
+	
+}
+
+#cancelbtncolor {
+	
+	margin-top: 50px;
+
+
+	
+}
+
+#redigerbtncolor2 {
+	background-color: #ff5722;
+	color: white;
+	border: 0;
+	margin-top: 50px;
+	
+
+}
+
+
+.btn {
+	
+	color: #333;
+	background-color: white;
+	border-color:#ccc;
+}
+
+#opretbtncolor2:hover {
+	background-color: #2E7D32;
+	color: white;
+	border: 0;
+}
+
+
+
+.formcontrol {
+margin-left: 150px;
+	
+}
+.fonttype
+ {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+.formcontrol2 {
+
+width: 30% !important;
+
+}
+
+
+
+
+.form-control {
+	background-color: #bdbdbd ;
+	border: 0;
+	-webkit-box-shadow: inset 0 0 0 rgba(0,0,0,0);
+	box-shadow:inset 0 0 0 rgba(0,0,0,0);
+	margin-bottom: 20px;
+	width: 50%;
+
+}
+
+.opretbtns {
+	margin-top: 50px;
+
+
+}
+
+.bigtext {
+
+	width: 50%;
+}
+
+.bigtextcontainer {
+	width: 50%;
+}
+
+.jumbotron p {
+	font-size: 10pt !important;
+}
+
+.redigerbtns {
+	margin-right: 250px;
+}
+
+.field {
+	margin-top: -10px !important;
+	color: #424242 !important;
+	font-size: 50px !important;
+	font-weight: 700 !important;
+}
+
+/**************** HEADER ****************/
+
+.headerimg {
+
+	display: none;
+
+}
+
+/************* FRONT PAGE ***************/
+
+#fpopretbtncolor {
+	background-color: #4caf50;
+	color: white;
+	border: 0;
+	margin-top: 25px;
+	float: none;
+}
+
+
+#fpredigerbtncolor {
+	background-color: #ff5722;
+	color: white;
+	border: 0;
+	margin-top: 25px;
+	float: none;
+
+
+}
+
+/*************** CREATE PATIENT ***********/
+
+.control1 {
+	position: static;
+	margin: auto;
+	margin-bottom: 10px !important;
+	width: 25% !important;
+	
+}
+
+.control2 {
+	position: static;
+	margin: auto;
+	width: 25% !important;
+}
+
+.col-md-6 {
+
+	
+	margin: auto;
+}
+
+.cpformcontrol2 {
+	margin-bottom: 10px !important;
+	margin: auto;
+	width: 25% !important;
+
+
+}
+
+.cpopretbtns {
+	margin-top: 50px;
+	margin-left: 400px;
+
+
+}
+
+/*************** REDIGER ***************/
+
+.rformcontrol2 {
+margin: auto;
+width: 75% !important;
+
+}
+.fonttype {
+	margin-top: 10px;
+}
+
+
+
+/************** REDIGER/SLET *************/
+
+.rscontrol2 {
+
+	margin-top: -50px;
+
+}
+
+.rsbuttons {
+	margin-right:0;
+}
+
+/******* MEDIA QUERIES ***********/
+
+
+@media (min-width: 992px) {
+
+	.headerimg {
+
+	display: block;
+	margin-left: 100px;
+}
+
+.rscontrol2 {
+
+	margin-top: 0px;
+	
+}
+
+	#fpopretbtncolor {
+		float: right;
+	}
+
+	#fpredigerbtncolor {
+
+		float: left;
+	}
+	.control1 {
+	position: absolute;
+	top: 50px;
+	right: 0;
+	margin-bottom: 10px !important;
+	width: 35% !important;
+	float: right;
+	
+	}
+
+	.control2 {
+	position: absolute;
+	top: 200px;
+	right:0;
+	width: 35% !important;
+
+	}
+
+
+	.cpformcontrol2 {
+	margin-bottom: 10px !important;
+	margin-left: 0 !important;
+	
+	width: 35% !important;
+}
+
+}
+
+	@media (min-width: 1200px) {
+
+			}
+
+   @media (min-width: 1400px) {
+   	.control1 {
+	position: absolute;
+	top: 50px;
+	right: 0px;
+	margin-bottom: 10px !important;
+	width: 35% !important;
+	float: right;
+	
+	}
+
+	.control2 {
+	position: absolute;
+	top: 200px;
+	right:0px;
+	width: 35% !important;
+
+	}
+
+
+	.cpformcontrol2 {
+	margin-bottom: 10px !important;
+	margin-left: 100px !important;
+	
+	width: 35% !important;
+}
+
+
+   }
