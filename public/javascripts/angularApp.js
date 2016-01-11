@@ -19,7 +19,7 @@
 			})
 			.state('redigerOversigt', {
 				url: '/redigerOversigt',
-				templateUrl: '/views/redigerOversigt.ejs',
+				templateUrl: '/views/redigeroversigt.ejs',
 				controller: 'kolCtrl',
 				resolve: {
 						patientPromise: ['patients', function(patients) {
